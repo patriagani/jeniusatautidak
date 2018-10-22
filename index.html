@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kamu Jenius ?</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="background">
+      <div id="menu">
+        <h1 id="title">Seberapa Jenius Kamuuuh ???</h1>
+        <img src="img/einstein.png" width="15%" height="15%" alt="How Genius Are You ?">
+        <div id= "deskripsi">
+          <p>Permainan ini hanya sebatas bercanda, kalah dalam permainan ini tidak
+            berarti anda adalah orang yang bodoh, begitu juga sebaliknya, apabila anda
+            menang dalam permainan ini bukan berarti anda orang yang betul betul jenius,
+            jadi tidak perlu bangga apalagi sombong :p</p>
+        </div>
+        <button id="playButton" class="button">Play Now</button>
+        <button id="rulesButton" class="button">Rules</button>
+        <div id="modalRules" class="modal">
+          <div class="rulesContent">
+            <span class="closeButton">&times;</span>
+            <h2>Rules !!!</h2>
+            <p>Akan diberikan 10 pertanyaan dalam quiz ini, pilihlah jawaban yang paling tepat
+              menurut kamu, kamu tidak diperkenankan untuk browsing atau bertanya kepada temanmu
+              diakhir quiz kami akan mengkalkulasi nilai kamu untuk menentukan kapasitas otakmu
+              apakah kamu genius, rata-rata atas, rata-rata bawah, atau malah bodoh hehehe
+            </p>
+              <br>
+              <h4>Waning !!!</h4>
+              <p>Ingat ini hanya permainan, jangan dianggap serius yaah :)</p>
+          </div>
+        </div>
+      </div>
+      <div id="jenius" class="jenius">
+        <h3>Wow Anda Jenius !!!</h3>
+        <img src="img/genius.jpeg" width="35%" height="35%" alt="Wow Anda Jenius">
+        <p>Anda tidak perlu sombong, ini hanya permainan receh, sesungguhnya anda tidak betul betul jenius :p</p>
+        <button id="refresh" class="nextButtonModal" onclick="location.reload()">Main Lagi :)</button>
+      </div>
+      <div id="pintar" class="pintar">
+        <h3>Selamat Anda Pintar !!!</h3>
+        <img src="img/smart.jpg" width="35%" height="35%" alt="Wow Anda Pintar">
+        <p>Anda tidak perlu sombong, ini hanya permainan receh, sesungguhnya anda belum tentu pintar :p</p>
+        <button id="refresh" class="nextButtonModal" onclick="location.reload()">Main Lagi :)</button>
+      </div>
+      <div id="bodoh" class="bodoh">
+        <h3>Maaf Lancang, Tapi sepertinya Anda Bodoh :(</h3>
+        <img src="img/stupid.jpeg" alt="Anda Bodoh">
+        <p>Anda tidak perlu bersedih, ini hanya permainan receh, sesungguhnya anda tidak betul betul bodoh :D</p>
+        <button id="refresh" class="nextButtonModal" onclick="location.reload()">Main Lagi :)</button>
+      </div>
+      <div id="dungu" class="dungu">
+        <h3>Saya tidak tega sebenarnya, tapi sepertinya anda dungu :(</h3>
+        <img src="img/idiot.jpg" width="35%" height="35%" alt="Wow Anda idiot">
+        <p>Anda tidak perlu sedih atau baper, ini hanya permainan receh, sesungguhnya anda tidak betul betul dungu :p</p>
+        <button id="refresh" class="nextButtonModal" onclick="location.reload()">Main Lagi :)</button>
+      </div>
+      <div id="modalQuestion" class="modalQuestion">
+          <div class="modalQuestionContent">
+            <div id="andaBenar" class="andaBenar">
+              <h2>Selamat anda benar</h2>
+              <img src="img/right.jpg" width="70%" height="70%" alt="">
+              <p>Jika anda menjawab benar, <br>ANDA TIDAK USAH SOMBONG !!!
+              </p>
+              <button id="nextButtonModal" class="nextButtonModal">Pertanyaan Selanjutnya</button>
+            </div>
+            <div id="andaSalah" class="andaSalah">
+              <h2>Sayang sekali anda SALAH !!!!</h2>
+              <img src="img/wrong.png" width="70%" height="70%" alt="">
+              <p>Berhati-hatilah dalam menjawab pertanyaan, <br>JANGAN SAMPAI SALAH !!!
+              </p>
+              <button id="nextButtonModal2" class="nextButtonModal">Pertanyaan Selanjutnya</button>
+            </div>
+          </div>
+        </div>
+      <div id="questionContainer" class="questionContainer">
+        <div id="question" class="question"></div>
+        <br>
+        <button id="option1" class="optionButton1"></button>
+        <button id="option2" class="optionButton2"></button>
+        <button id="option3" class="optionButton3"></button>
+        <button id="option4" class="optionButton4"></button>
+        <br><br>
+        <button id="nextButton" class="nextButton" onclick="loadNextQuestion()">Kirim Jawaban</button>
+      </div>
+      <div class="patria">
+        <p>Created by PatriaGani</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/questions.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+  </body>
+</html>
